@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -66,6 +67,16 @@ public class MainActivity extends AppCompatActivity {
 
 
                 );
+
+        variableBinding.myImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int width = v.getWidth();
+                int height = v.getHeight();
+                String message = "The width = " + width + " and height = " + height;
+                Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         //b.setOnClickListener(  (v) -> {

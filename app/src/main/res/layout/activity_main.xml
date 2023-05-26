@@ -48,6 +48,20 @@
         android:id="@+id/myRadioButton"
         android:text="Radio Buttons" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src= "@drawable/logo_algonquin"
+        android:id="@+id/myImageView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myImageButton"
+        android:src="@drawable/logo_algonquin" />
+
+
+
 
 
 </LinearLayout>
